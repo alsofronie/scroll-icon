@@ -27,6 +27,5 @@ Make sure you `cd` into the `scroll-icon` folder and use `npm` and `gulp` to com
 git clone https://github.com/alsofronie/scroll-icon.git
 cd scroll-icon
 npm install
-grunt less
-grunt cssmin
+grunt
 ```
