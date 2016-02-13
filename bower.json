@@ -1,0 +1,23 @@
+{
+  "name": "scroll-icon",
+  "authors": [
+    "Alex Sofronie <alsofronie@gmail.com>"
+  ],
+  "description": "A scroll icon that resembles a mouse middle scroll",
+  "main": "src/less/scroll-icon.less",
+  "moduleType": [],
+  "keywords": [
+    "icon",
+    "less",
+    "sass"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

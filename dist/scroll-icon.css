@@ -1,0 +1,121 @@
+/**
+ * 
+ */
+/**
+ * 
+ */
+@keyframes scroll-knob {
+  0% {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    margin-top: 0;
+  }
+  20% {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+  }
+  80% {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -ms-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+  }
+  100% {
+    -webkit-opacity: 0.2;
+    -moz-opacity: 0.2;
+    -ms-opacity: 0.2;
+    -o-opacity: 0.2;
+    opacity: 0.2;
+    margin-top: 10px;
+  }
+}
+@keyframes touch-knob {
+  0% {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    margin-top: 0;
+  }
+  20% {
+    -webkit-opacity: 0.7;
+    -moz-opacity: 0.7;
+    -ms-opacity: 0.7;
+    -o-opacity: 0.7;
+    opacity: 0.7;
+  }
+  100% {
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -ms-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    margin-top: -33.6px;
+  }
+}
+.scroll-icon {
+  position: relative;
+  display: inline-block;
+  -webkit-border-radius: 999em;
+  -moz-border-radius: 999em;
+  -ms-border-radius: 999em;
+  -o-border-radius: 999em;
+  border-radius: 999em;
+  border: 2px solid #222;
+  background-color: transparent;
+  height: 42px;
+}
+.scroll-icon:before {
+  content: ' ';
+  position: absolute;
+}
+@media (max-width: 768px) {
+  .scroll-icon {
+    width: 42px;
+  }
+  .scroll-icon:before {
+    width: 37px;
+    height: 37px;
+    top: 3px;
+    left: 3px;
+    border-radius: 999em;
+    background-color: #222;
+    margin: 0;
+    animation-name: touch-knob;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+@media (min-width: 769px) {
+  .scroll-icon {
+    width: 30px;
+  }
+  .scroll-icon:before {
+    width: 6px;
+    height: 6px;
+    top: 6px;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 999em;
+    background-color: #222;
+    animation-name: scroll-knob;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+.scroll-icon.scroll-icon-inverse {
+  border-color: #fff;
+}
+.scroll-icon.scroll-icon-inverse:before {
+  background-color: #fff;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "scroll-icon",
+  "version": "0.1.0",
+  "description": "A scroll icon that resembles a mouse middle scroll",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-less": "^1.2.0",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
